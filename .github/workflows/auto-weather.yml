@@ -4,11 +4,14 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron:  "0 1 * * *" # AM9時
+    - cron:  "0 1 * * *" # 日本時間AM9時
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    # mainブランチのみでジョブを実行するよう制限
+    if: github.ref == 'refs/heads/main'  
 
     steps:
       - uses: actions/checkout@v2
