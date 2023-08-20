@@ -12,6 +12,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+        with:
+          repository: KazukiKuriyama/auto-weather
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          path: auto-weather
 
       - name: Install necessary packages
         run: |
@@ -32,7 +36,6 @@ jobs:
 
       - name: Commit and push
         run: |
-          git remote set-url origin https://${{ secrets.GH_TOKEN }}@github.com/${{ secrets.USER_NAME }}/auto-weather.git
           git config --local user.email ${{ secrets.USER_EMAIL }}
           git config --local user.name ${{ secrets.USER_NAME }}
           git add weather_data.md
