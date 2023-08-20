@@ -34,6 +34,7 @@ jobs:
           # 天気情報を1行でファイルに追加
           echo "$date: 大阪の天気は $weather で、気温は $temperature°C です。"
           echo "$date: 大阪の天気は $weather で、気温は $temperature°C です。" >> weather_data.md
+          cat weather_data.md
           
       - name: Display contents of weather_data.md
         run: |
