@@ -1,0 +1,39 @@
+name: Update Weather
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron:  "0 1 * * *" # AM9時
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install necessary packages
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq curl
+
+      - name: Get Weather Data and Update File
+        run: |
+          # 天気APIから大阪の天気情報を取得。ここではOpenWeatherMapを例としています。
+          # 必要に応じてAPIキーとエンドポイントを変更してください。
+          response=$(curl -s "https://api.openweathermap.org/data/2.5/weather?q=Osaka,jp&appid=${{ secrets.WEATHER_API_KEY }}&units=metric")
+          weather=$(echo $response | jq -r ".weather[0].description")
+          temperature=$(echo $response | jq -r ".main.temp")
+          date=$(date "+%Y-%m-%d")
+
+          # 天気情報を1行でファイルに追加
+          echo "$date: 大阪の天気は $weather で、気温は $temperature°C です。" >> weather_data.md
+
+      - name: Commit and push
+        run: |
+          git config --global user.email ${{ secrets.USER_EMAIL }}
+          git config --global user.name ${{ secrets.USER_NAME }}
+          git add weather_data.md
+          git commit -m 'Update Osaka weather data'
+          git push origin main
