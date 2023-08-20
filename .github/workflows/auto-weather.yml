@@ -46,8 +46,8 @@ jobs:
           ls -aux ./
           git config --global user.email ${{ secrets.USER_EMAIL }}
           git config --global user.name ${{ secrets.USER_NAME }}
-          git add weather_data.md
+          git add .
           # Display git status to verify changes are staged
           git status
-          git commit -m 'Update Osaka weather data' || echo "No changes to commit"
+          git commit -m 'Update Osaka weather data'
           git push origin main
