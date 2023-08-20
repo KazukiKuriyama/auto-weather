@@ -32,19 +32,21 @@ jobs:
           date=$(date "+%Y-%m-%d")
 
           # 天気情報を1行でファイルに追加
+          cd auto-weather
           echo "$date: 大阪の天気は $weather で、気温は $temperature°C です。"
           echo "$date: 大阪の天気は $weather で、気温は $temperature°C です。" >> weather_data.md
           cat weather_data.md
           
       - name: Display contents of weather_data.md
         run: |
+          cd auto-weather
           cat weather_data.md
 
       - name: Commit and push
         run: |
+          cd auto-weather
           cat weather_data.md
           ls -aux ./
-          cd auto-weather  # Change to the directory containing the repo
           cat ./weather_data.md
           cat weather_data.md
           ls -aux ./
