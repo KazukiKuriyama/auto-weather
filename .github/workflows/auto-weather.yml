@@ -36,9 +36,18 @@ jobs:
 
           # 天気情報を1行でファイルに追加
           cd auto-weather
-          echo "$date: 大阪の天気は $weather で、気温は $temperature°C です。"
-          echo "$date: 大阪の天気は $weather で、気温は $temperature°C です。\n" >> weather_data.md
-          cat weather_data.md
+          
+          # 一時ファイルへの書き込み
+          echo "$date: 大阪の天気は $weather で、気温は $temperature°C です。\n" > temp.md
+          
+          # 元のファイルの内容を一時ファイルに追加
+          cat auto-weather/weather_data.md >> temp.md
+          
+          # 一時ファイルを元のファイル名で上書き
+          mv temp.md auto-weather/weather_data.md
+          
+          # 確認のための内容表示
+          cat auto-weather/weather_data.md
           
       - name: Display contents of weather_data.md
         run: |
