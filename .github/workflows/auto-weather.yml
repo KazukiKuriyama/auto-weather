@@ -43,6 +43,7 @@ jobs:
       - name: Commit and push
         run: |
           cat weather_data.md
+          ls -aux ./
           cd auto-weather  # Change to the directory containing the repo
           cat ./weather_data.md
           cat weather_data.md
