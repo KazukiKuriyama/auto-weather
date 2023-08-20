@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron:  "0 1 * * *" # 日本時間AM9時
+    - cron:  "0 */8 * * *" # 8時間ごとに更新
 
 jobs:
   build:
