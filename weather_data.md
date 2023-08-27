@@ -1,3 +1,5 @@
+2023-08-27: 大阪の天気は scattered clouds で、気温は 27.04°C です。
+
 2023-08-27: 大阪の天気は scattered clouds で、気温は 31.92°C です。
 
 2023-08-27: 大阪の天気は scattered clouds で、気温は 29.82°C です。
