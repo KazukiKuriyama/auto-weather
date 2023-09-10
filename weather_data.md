@@ -1,3 +1,5 @@
+2023-09-10: 大阪の天気は scattered clouds で、気温は 29.06°C です。
+
 2023-09-09: 大阪の天気は overcast clouds で、気温は 24.73°C です。
 
 2023-09-09: 大阪の天気は overcast clouds で、気温は 29.8°C です。
