@@ -1,3 +1,5 @@
+2023-09-25: 大阪の天気は scattered clouds で、気温は 22.61°C です。
+
 2023-09-25: 大阪の天気は scattered clouds で、気温は 29.45°C です。
 
 2023-09-25: 大阪の天気は scattered clouds で、気温は 26.52°C です。
