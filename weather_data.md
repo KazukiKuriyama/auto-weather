@@ -1,3 +1,5 @@
+2023-10-05: 大阪の天気は scattered clouds で、気温は 16.41°C です。
+
 2023-10-05: 大阪の天気は scattered clouds で、気温は 21.6°C です。
 
 2023-10-05: 大阪の天気は light intensity shower rain で、気温は 21.82°C です。
