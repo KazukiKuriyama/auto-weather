@@ -1,3 +1,5 @@
+2023-10-16: 大阪の天気は scattered clouds で、気温は 16.91°C です。
+
 2023-10-16: 大阪の天気は scattered clouds で、気温は 21.46°C です。
 
 2023-10-16: 大阪の天気は scattered clouds で、気温は 20.53°C です。
