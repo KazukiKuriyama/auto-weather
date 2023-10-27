@@ -1,3 +1,5 @@
+2023-10-27: 大阪の天気は broken clouds で、気温は 12.57°C です。
+
 2023-10-27: 大阪の天気は light intensity shower rain で、気温は 15.95°C です。
 
 2023-10-27: 大阪の天気は scattered clouds で、気温は 16.13°C です。
