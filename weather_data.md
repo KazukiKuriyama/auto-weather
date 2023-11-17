@@ -1,3 +1,5 @@
+2023-11-17: 大阪の天気は light intensity shower rain で、気温は 11.88°C です。
+
 2023-11-16: 大阪の天気は light rain で、気温は 13.29°C です。
 
 2023-11-16: 大阪の天気は broken clouds で、気温は 16.93°C です。
