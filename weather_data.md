@@ -1,3 +1,5 @@
+2023-11-30: 大阪の天気は scattered clouds で、気温は 11.99°C です。
+
 2023-11-30: 大阪の天気は scattered clouds で、気温は 9.37°C です。
 
 2023-11-29: 大阪の天気は overcast clouds で、気温は 9.26°C です。
