@@ -1,3 +1,5 @@
+2023-12-16: 大阪の天気は overcast clouds で、気温は 8.71°C です。
+
 2023-12-16: 大阪の天気は light intensity shower rain で、気温は 14.67°C です。
 
 2023-12-16: 大阪の天気は broken clouds で、気温は 15.94°C です。
